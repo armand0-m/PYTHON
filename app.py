@@ -2,8 +2,8 @@ from flask import Flask, render_template, make_response, jsonify, request
 
 app=Flask(__name__)
 
-PORT=3200
-HOST='0.0.0.0'
+#PORT=3200
+#HOST='0.0.0.0'
 
 INFO={
     "languages":{
@@ -98,5 +98,5 @@ def delete_collection(collection):
 
 if __name__=="__main__":
     print("Server running in port %s"%(PORT))
-    app.run(host=HOST, port=PORT)
+    app.run(degug=True, host=HOST)
 
