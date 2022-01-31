@@ -97,6 +97,6 @@ def delete_collection(collection):
     return res
 
 if __name__=="__main__":
-    print("Server running in port %s"%(PORT))
-    app.run(degug=True, host=HOST)
+    print("Server running")
+    app.run(debug=True, host="0.0.0.0")
 
